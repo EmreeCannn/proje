@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top{
+    margin-top: 5rem;
+    display: flex;
+    justify-content:center;
+}
+
+
+.top .logo{
+    position: absolute;
+    top:5.5rem;
+    margin-left:-8px;
+    margin-top: 0.5rem;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    background-color: blueviolet;
+}
+.top .logo2{
+    margin-top: 0.5rem;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    
+    background-color: blue
+}
+/* about start */
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 9rem 0;
+    
+
+}
+.about .about-picture{
+    display: flex;
+    
+
+}
+.about .about-picture img{
+    width: 100%;
+    height: 100%;
+    max-width:110px;
+    max-height:110px;
+    border-radius: 110px;
+    padding: 2px;
+}
+/* when i tap to img with my mouse it will be up to 10 px */
+.about .about-picture img:hover{
+    transform:translateY(-5px);
+    transition: 0.5s;
+}
+.about-picture .column1{
+    margin-left: -20px;
+}
+.about-picture .column6{
+    margin-right: -40px;
+}
+
+.column2, .column5{
+    margin-top:-40px;
+    overflow: visible;
+}
+.about-middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px; 
+    
+}
+.about-middle p,h1{
+    padding: 20px;
+    font-weight: bold;
+}
+
+.btn{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+}
+.btn a{
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.btn .btn-1{
+    background-color:#4f93a6;;
+    border-radius: 30px;
+}
+.btn .btn-2{
+    background-color:#887a9c;
+    border-radius: 30px;
+    width: 40%;
+}
+.about-middle p{
+    margin-bottom: 10px;
+    margin-top: -15px;
+    letter-spacing: 0.9px;
+    font-weight: 500;
+    color: rgb(160,154,154);
+}
+.btn span{
+    color:#a0d1df;
+}
+/* about finished */
+/* line start */
+.line__elements{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.line__elements .dash__element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: gray;
+}
+.line__elements .circle__element{
+    margin-top: 4px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color:white;
+    border: 1px solid gray;
+    position: relative;
+    
+}
+h4{
+position: absolute;
+left:9.8px;
+top: 4px;
+color: gray;
+/* line finshed */
+/* about second part start */
+}
+.about__second__part .images{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.about__second__part .images img{
+    margin: 0.2rem;
+    width: 18%;
+    height: 120px;
+    border-radius: 12px;  
+}
+.second__part{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+.second__part h5{
+    font-weight: bold;
+    color: #4f93a6;
+    letter-spacing: 1.8px;
+    text-align: center;
+}
+.second__part h1{
+    text-align: center;
+    
+}
+.second__part p{
+    color: gray;
+    font-size: 14px;
+    letter-spacing: 0.9px;
+    font-weight: 500;
+    text-align: center;
+}
+/* about second part finished */
+/* footer start */
+.footer{
+    margin-top: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.footer__picture{
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/pexels-daniel-xavier-1239291.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.footer__info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    background-color: #599aacb3;
+}
+.footer__info h3,p{
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+}
+.footer__info h3{
+    font-size: 32px;
+    letter-spacing: 1.2px;
+}
+.footer__info p{
+    font-size: 14px;
+    text-align: center;
+}
+.footer__info a{
+    text-decoration: none;
+    background-color:#887a9c;
+    padding: 13px 10px;
+    border-radius: 20px;
+    color:white;
+    font-weight: bold;  
+}
+.footer__info span{
+    color: aqua;
+}
+/* footer end */
+
+/* responsive start */
+
+@media screen and (max-width:700px){
+    .footer__info{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .picture-left{
+        margin-left: 40px;
+    }
+    .about .picture-right{
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+    .about__second__part .images{
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+       
+    }
+    .about__second__part .images img{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 400px;
+        height: 200px;
+        margin-left: 20px;
+       
+    }
+    .footer{
+        margin-left: 12px;
+    }
+   
+    
+}
